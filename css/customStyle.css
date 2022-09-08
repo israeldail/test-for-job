@@ -43,6 +43,10 @@
 #item2 {
     order: 1;
 }
+#item2::after {
+    content: "\a";
+    white-space: pre;
+}
 #item3 {
     order: 2;
 }
@@ -57,20 +61,102 @@
     order: 6;
 }
 
+.gallery-photo {
+    content: url(/images/gallery/moon-1.jpg);
+    float: left;
+    width: 600px;
+    height: 475px;
+}
+.gallery-photo2 {
+    content: url(/images/gallery/moon-2.jpg);
+    width: 650px;
+    height: 475px;
+    z-index: 100;
+    position: absolute;
+    right: 1rem;
+}
+.gallery-photo3 {
+    content: url(/images/gallery/moon-3.jpg);
+    width: 65%;
+    float: left;
+}
+.gallery-photo4 {
+    content: url(/images/gallery//moon-4.jpg);
+    width: 35%;
+    height: 30rem;
+    z-index: 99;
+    float: right;
+}
+
+.gallery-photo5 {
+    content: url(/images/gallery/moon-5.jpg);
+    width: 40px;
+    height: 35rem;
+    width: 35rem;
+    margin-right: 20rem;
+    float: left;
+}
+
+.gallery-photo6 {
+    content: url(/images/gallery/moon-6.jpg);
+    width: 55%;
+    height: 35rem;
+    float: right;
+    margin-top: -35rem;
+    margin-right: -0.1rem;
+    z-index: 98;
+}
+
+.gallery-photo7 {
+    content: url(/images/gallery/moon-7.jpg);
+    width: 36rem;
+    height: 35rem;
+    float: left;
+    z-index: 97;
+    margin-right: -100%;
+}
+
+.gallery-photo8 {
+    content: url(/images/gallery/moon-8.jpg);
+    width: 50%;
+    height: 35rem;
+    float: right;
+    z-index: 96;
+}
+
+.gallery-photo9 {
+    content: url(/images/gallery/moon-9.jpg);
+    width: 50%;
+    height: 35rem;
+    float: left;
+    margin-right: -100%;
+    
+}
+
+.gallery-photo10 {
+    content: url(/images/gallery/moon-10.jpg);
+    width: 50%;
+    height: 35rem;
+    float: right;
+}
+
 
 
 @media only screen and (max-width: 600px) {
 
- 
+    .space-moon-container {
+        display: flex;
+        flex-direction: column;
+     }
  
 
  .space-image {
-    width: 250px;
+    width: 500px;
     height: 400px;
  }
 
- .hero, .hero-unit-moon-exploration {
-    width: 400px;
+ .hero.hero-unit-moon-exploration {
+    width: 500px;
     height: 400px;
  }
 
@@ -83,7 +169,8 @@
 
 .hero-image {
     position: absolute;
-    right: 35px;
+    left: -7rem;
+    
 }
 
 .flex-container {
