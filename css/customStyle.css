@@ -1,0 +1,71 @@
+
+.space-moon-container {
+   display: flex;
+}
+
+.hero-image {
+    position: absolute;
+    left: -25rem;
+}
+
+.space-copy {
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    text-align: center;
+}
+
+.space-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.space-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#item1 {
+    order: 0;
+}
+#item2 {
+    order: 1;
+}
+#item3 {
+    order: 2;
+}
+
+#item4 {
+    order: 3;
+}
+#item5 {
+    order: 5;
+}
+#item6 {
+    order: 4;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+ 
+
+ .space-image {
+    width: 400px;
+    height: 400px;
+ }
+
+ .hero, .hero-unit-moon-exploration {
+    width: 400px;
+    height: 400px;
+ }
+    
+  }
